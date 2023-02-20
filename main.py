@@ -19,7 +19,10 @@ email = driver.find_element(By.NAME, "email")
 email.send_keys("samuel@gmail.com")
 
 send_button = driver.find_element(By.CLASS_NAME, "btn-block")
-send_button.click()
+# send_button.click()
+
+# I did not use keys here as click was more convenient but I will demo how Keys works
+send_button.send_keys(Keys.ENTER)
 
 driver.quit()
 
